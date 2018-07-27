@@ -1,3 +1,8 @@
+<?php
+  $lastname = 'B.';
+  $firstname = 'Malika';
+  $age = 26;
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -5,11 +10,13 @@
     <title>Exercice 7</title>
   </head>
   <body>
-    <?php
-      $lastname = 'B.';
-      $firstname = 'Malika';
-      $age = 26;
-      echo 'Bonjour ' . $lastname . ' ' . $firstname . ', tu as ' . $age . ' ans.';
-    ?>
+    <p>
+      <?php
+        echo 'Bonjour ' . $lastname . ' ' . $firstname . ', tu as ' . $age . ' ans.';
+      ?>
+    </p>
+<!-- AUTRE POSSIBILITE
+<p>Bonjour <?php echo $lastname . ' ' . $firstname ?>, tu as <?php echo $age ?> ans.</p>
+-->
   </body>
 </html>
